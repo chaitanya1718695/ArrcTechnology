@@ -1,0 +1,157 @@
+/* Ensure the full-screen background image fills the viewport */
+.ecommerce { 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  position: relative;
+  animation: zoomInOut 15s infinite alternate ease-in-out;
+  margin-top: 120px;
+
+}
+
+.ecommerce-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  animation: parallaxZoom 20s infinite alternate ease-in-out;
+ 
+}
+
+/* Main container holding image and text, with padding and centering */
+.container-ecommerce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and image */
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center container horizontally */
+}
+
+/* Image container with smooth animation and slight perspective */
+.image-container-ecommerce {
+  flex: 1;
+  max-width: 45%; /* Slightly reduce width for better balance */
+  padding: 10px;
+  perspective: 1000px;
+  box-sizing: border-box;
+  animation: zoomInImage 1.5s ease-in-out forwards;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.image-container-ecommerce:hover .responsive-image {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Text container with optimized padding and width */
+.text-container-ecommerce {
+  flex: 1;
+  max-width: 50%; /* Slightly reduce width for better balance */
+  padding: 20px;
+  perspective: 1000px;
+  box-sizing: border-box;
+  animation: slideInText 1.5s ease-in-out forwards;
+}
+
+.text-container-ecommerce h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #8201e2, #d53f8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+.text-container-ecommerce p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: rgb(186, 177, 177);
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+/* Background color and padding for content section */
+.backcolorecommerce {
+  background-color: black;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for various screen sizes */
+@media (max-width: 1200px) {
+  .container-ecommerce {
+      padding: 15px;
+  }
+
+  .image-container-ecommerce, .text-container-ecommerce {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  .text-container-ecommerce h2 {
+      font-size: 2rem;
+  }
+
+  .text-container-ecommerce p {
+      font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-ecommerce {
+      justify-content: center; /* Center-align for smaller screens */
+  }
+
+  .text-container-ecommerce h2 {
+      font-size: 1.75rem;
+  }
+
+  .text-container-ecommerce p {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-ecommerce {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center;
+  }
+
+  .image-container-ecommerce, .text-container-ecommerce {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  .text-container-ecommerce h2 {
+      font-size: 1.5rem;
+  }
+
+  .text-container-ecommerce p {
+      font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-container-ecommerce h2 {
+      font-size: 1.25rem;
+  }
+
+  .text-container-ecommerce p {
+      font-size: 0.7rem;
+  }
+}

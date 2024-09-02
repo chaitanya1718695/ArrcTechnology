@@ -1,0 +1,879 @@
+/* General Styles */
+.backcolor-Dummy {
+  background-color: rgb(3, 0, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  margin-top: 120px;
+}
+
+.container-Dummy {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.image-container-Dummy img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+.text-container-Dummy {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+.text-container-Dummy h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem; /* Responsive font size */
+  color: rgb(120, 24, 194);
+  padding: 10px;
+  font-weight: 500;
+  margin: 0;
+  background: linear-gradient(135deg, rgb(62, 3, 107), rgb(192, 90, 170));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 1.5s ease-in-out;
+  text-align: center; /* Center text */
+}
+.text-container-Dummy h1:hover{
+  background: linear-gradient(135deg, rgb(192, 90, 170), rgb(87, 12, 144));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: rgb(191, 80, 246) 1px 1px, rgba(206, 44, 224, 0.1) 1px 1px;
+}
+
+
+.text-container-Dummy   p:hover{
+  color: #fdfbfb;
+}
+
+.text-container-Dummy  {
+
+  p{
+  font-size: 1rem;
+  color: #8a8686;
+
+
+}
+
+
+/* Base span styling */
+span {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 65px;
+  margin-right: 5px;
+  display: inline-block; /* Ensure span respects the animation */
+  font-family: 'Brush Script MT', cursive;
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+  margin-top: -30px;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+  
+
+
+  /* Gradient text color */
+  background: linear-gradient(to right, #650eac, #f328d5); /* Example gradient from orange to light orange */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* This ensures only the text is filled with the gradient */
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+
+
+/* Glowing animation */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(209, 3, 178, 0.7), 0 0 10px rgba(209, 3, 178, 0.5), 0 0 15px rgba(209, 3, 178, 0.3), 0 0 20px rgba(209, 3, 178, 0.1); /* Initial glow */
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(209, 3, 178, 1), 0 0 20px rgba(209, 3, 178, 0.7), 0 0 30px rgba(209, 3, 178, 0.5), 0 0 40px rgba(209, 3, 178, 0.3); /* Intense glow */
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(209, 3, 178, 0.7), 0 0 10px rgba(209, 3, 178, 0.5), 0 0 15px rgba(209, 3, 178, 0.3), 0 0 20px rgba(209, 3, 178, 0.1); /* Return to initial glow */
+  }
+}
+
+/* Apply the glowing animation to spans */
+span.glowing {
+ 
+  font-family: 'Courier New', Courier, monospace; /* Change font family for animated spans */
+}
+
+}
+
+
+
+
+.knowmore {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px 30px;
+  border-radius: 30px;
+   color: #f9f6fa;
+  background: linear-gradient(135deg, #560280, #7d3f7d);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  animation: textAnimation 1.5s ease-in-out;
+  font-weight: bold;
+  display: inline-block; /* Ensure button doesn't stretch full width */
+}
+
+
+
+
+.knowmore:hover {
+  background: linear-gradient(135deg, #7d3f7d, #560280);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+
+.gray {
+  background-color: #0f0f0f;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.corevalue,
+.headingn {
+  text-align: center;
+}
+
+.unveiling,
+.lasting {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem; /* Responsive font size */
+  color: rgb(120, 24, 194);
+  padding: 10px;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(135deg, rgb(62, 3, 107), rgb(192, 90, 170));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 1.5s ease-in-out;
+  text-align: center; /* Center text */
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: -10px;
+  padding: 10px;
+
+}
+
+
+
+.unveiling,
+.lasting:hover{
+  background: linear-gradient(135deg, rgb(192, 124, 209), rgb(94, 13, 156));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+
+.container-dummy-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top:30px ;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+.row-dummy-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-sm-4 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card-dummy-1 {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-dummy-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-dummy-1 {
+  padding: 20px;
+  flex: 1;
+}
+
+.card-title-dummy-1 {
+  color: rgb(129, 123, 132);
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card-text-dummy-1 {
+  color: #fbf3f3;
+}
+
+.card-dummy-1.blue {
+  background: linear-gradient(135deg, #00080b, #692092, rgb(234, 109, 232));
+}
+
+.card-dummy-1.red {
+  background: linear-gradient(135deg, #07000b, #76307a, #cd85ee);
+}
+
+.card-dummy-1.green {
+  background: linear-gradient(135deg, #07000b, #902996, #bc5de8);
+}
+
+.card-dummy-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform: rotateX(0deg) rotateY(0deg) scale(1.1);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.card-dummy-1.blue:hover::before,
+.card-dummy-1.red:hover::before,
+.card-dummy-1.green:hover::before {
+  transform: rotateX(15deg) rotateY(15deg) scale(1.2);
+}
+
+/* Keyframes */
+@keyframes glow {
+
+  100% {
+      text-shadow: 0 0 10px rgb(10, 1, 19), 0 0 15px rgb(44, 8, 78), 0 0 20px rgb(50, 6, 92), 0 0 25px blueviolet, 0 0 30px blueviolet, 0 0 35px blueviolet, 0 0 40px rgb(45, 5, 83);
+  }
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container-Dummy {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .image-container-Dummy img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .text-container-Dummy h1 {
+      font-size: 1.8rem;
+  }
+
+  .text-container-Dummy p {
+      font-size: 0.9rem;
+  }
+
+  .card-dummy-1 {
+      min-height: 250px;
+  }
+
+  .card-body-dummy-1 {
+      padding: 15px;
+  }
+
+  .card-title-dummy-1 {
+      font-size: 1rem;
+  }
+
+  .card-text-dummy-1 {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container-Dummy h1 {
+      font-size: 1.6rem;
+  }
+
+  .text-container-Dummy p {
+      font-size: 0.85rem;
+  }
+
+  .knowmore {
+      padding: 8px 16px;
+      font-size: 16px;
+  }
+
+  .card-dummy-1 {
+      min-height: 220px;
+  }
+
+  .card-title-dummy-1 {
+      font-size: 0.95rem;
+  }
+
+  .card-text-dummy-1 {
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container-Dummy h1 {
+      font-size: 1.4rem;
+  }
+
+  .text-container-Dummy p {
+      font-size: 0.75rem;
+  }
+
+  .knowmore {
+      padding: 6px 12px;
+      font-size: 14px;
+  }
+
+  .card-dummy-1 {
+      min-height: 200px;
+  }
+
+  .card-title-dummy-1 {
+      font-size: 0.9rem;
+  }
+
+  .card-text-dummy-1 {
+      font-size: 0.8rem;
+  }
+}
+
+/* Join Button */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.join {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px 30px;
+  border-radius: 30px;
+   color: #f9f6fa;
+  background: linear-gradient(135deg, #560280, #7d3f7d);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  animation: textAnimation 1.5s ease-in-out;
+  font-weight: bold;
+  display: inline-block; /* Ensure button doesn't stretch full width */
+  width: 120px;
+  font-weight: bold;
+}
+
+
+
+
+
+.join:hover {
+  background: linear-gradient(135deg, #7d3f7d, #560280);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new div  */
+
+
+.success {
+  color: rgb(173, 0, 195);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+
+.journey-span {
+  margin-left: 15px; 
+  /* Adjust the value as needed */
+}
+
+/* Custom card styling */
+.card-dummy {
+  background-color: #2f2f2f; /* Light background color */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden; 
+  height: 100%;
+  margin: 20px 0;
+}
+
+.card-dummy:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-dummy {
+  padding: 20px;
+}
+
+.card-title-dummy {
+  font-size: 1.5rem;
+  color: darkviolet;
+  text-align: center;
+}
+
+.card-text-dummy {
+  font-size: 1rem;
+  color: #f0f3f7; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-dummy {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-dummy {
+    margin: 10px 0;
+  }
+}
+
+  
+.ourstory{
+  color: darkviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+
+
+
+/*                             */
+
+/* Container for the background and padding */
+.bg-dark {
+  background-color: #070707;
+  padding: 60px 20px; /* Increased padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for the image and card */
+.card-container {
+  max-width: 1200px;
+  margin: auto;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+/* Card styling */
+.card {
+  background: linear-gradient(0deg, rgba(249,247,247,1) 0%, rgba(168,159,175,1) 0%, rgba(96,45,168,1) 89%);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smoother transitions */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px; /* Increased padding for better content spacing */
+  width: 100%;
+  max-width: 1200px; /* Adjusted max-width for larger cards */
+  margin: auto; /* Center the card horizontally */
+}
+
+/* Card body with content and image */
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Card content section */
+.card-content {
+  flex: 1;
+  padding: 20px;
+  color: #6d0577; /* White text color for readability */
+}
+
+/* Card image section */
+.card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Rounded corners for the image */
+}
+
+/* Text styling */
+.title-primary-dummycard {
+  color: rgb(62, 1, 98);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em; /* Adjusted font size */
+  margin-bottom: 10px; /* Spacing between titles */
+}
+
+
+
+/* Button styling */
+.btn-primary {
+  margin-top: 20px;
+  background-color: rgb(88, 24, 148);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: glow 1.5s infinite alternate, float 3s infinite ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-image {
+    margin-top: 20px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(30, 2, 26, 0.7), 0 0 10px rgba(209, 3, 178, 0.5), 0 0 15px rgba(214, 61, 191, 0.3), 0 0 20px rgba(62, 2, 53, 0.1);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(209, 3, 178, 1), 0 0 20px rgba(209, 3, 178, 0.7), 0 0 30px rgba(209, 3, 178, 0.5), 0 0 40px rgba(209, 3, 178, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(242, 104, 221, 0.7), 0 0 10px rgba(209, 3, 178, 0.5), 0 0 15px rgba(38, 1, 32, 0.3), 0 0 20px rgba(209, 3, 178, 0.1);
+  }
+}
+
+
+
+  
+/*  */
+
+
+/* Import Google font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.backgrayblack {
+  background-color: #060000;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.two-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(6, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(24, 23, 23, 0.1);
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.one-text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.two-images-container {
+  display: flex;
+  flex: 2;
+  gap: 20px;
+}
+
+.two-image-container {
+  flex: 1;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.one-text-container h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem; /* Responsive font size */
+  color: rgb(120, 24, 194);
+  padding: 10px;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(135deg, rgb(62, 3, 107), rgb(192, 90, 170));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 1.5s ease-in-out;
+  text-align: center; /* Center text */
+}
+
+
+.one-text-container h1:hover{
+  background: linear-gradient(135deg, rgb(212, 132, 194), rgb(94, 13, 156));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+
+.one-text-container h5 {
+  color: darkviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation: textSlideIn 2s ease-out,  fadeInUp 2s ease-in-out forwards;
+}
+
+.one-text-container h6 {
+  font-size: 1rem;
+  color: rgb(180, 174, 174);
+  line-height: 1.5;
+}
+.one-text-container h6:hover{
+  font-size: 1rem;
+  color: rgb(248, 242, 242);
+  line-height: 1.5;
+}
+
+
+.one-text-container .inovationtext{
+  font-family: 'Brush Script MT';
+  font-size: 3.5rem;
+  color: #8014df;
+  margin-top: -30px;
+}
+
+@media (max-width: 1024px) {
+  .two-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .one-text-container {
+    padding: 10px;
+  }
+
+  .two-images-container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  .inovationtext {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  .inovationtext {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  h6 {
+    font-size: 0.7rem;
+  }
+
+  .inovationtext {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+  /*  */
+
+  .backgrayblack {
+    background-color: #090101;
+    padding: 50px 20px; /* Adjusted padding for better responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+   
+.trusted h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff50df, #80088b, #a37adc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease;
+}
+  
+
+
+.trusted h5:hover {
+  background: linear-gradient(90deg, #a04bfa, #c55ab6, #890897);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+  .card-row-compony {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the spacing between cards as needed */
+    padding: 20px;
+    animation: textSlideIn 2s ease-out, fadeInUp 2s ease-in-out forwards;
+  }
+  
+  .card-compony {
+    flex: 1 1 calc(20% - 40px); /* 20% width minus the gap */
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a, #08000b);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: darkviolet; /* Set the text color to dark violet */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    height: 10%;
+  }
+  
+  .card-compony h2 {
+    color: darkviolet; /* Ensure the heading also has the dark violet color */
+  }
+  
+  .card-compony p {
+    color: darkviolet; /* Ensure the paragraph text also has the dark violet color */
+  }
+  
+  .card-compony a {
+    color: darkviolet; /* Set the link color to dark violet */
+    text-decoration: none;
+  }
+  
+  .card-compony:hover {
+    background-color: #8014df; /* Change this color to your desired hover color */
+  }
+  
+  .card-compony:hover h2,
+  .card-compony:hover p,
+  .card-compony:hover a {
+    color: white; /* Change text color to white on hover for contrast */
+  }
+  
+  @media (max-width: 1200px) {
+    .card-compony {
+      flex: 1 1 calc(33.33% - 40px); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-compony {
+      flex: 1 1 calc(50% - 40px); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-compony {
+      flex: 1 1 calc(100% - 40px); /* Adjust for smaller screens */
+    }
+  }
+  

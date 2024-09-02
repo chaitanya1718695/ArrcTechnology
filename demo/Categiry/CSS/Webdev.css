@@ -1,0 +1,188 @@
+/* Webdev Image Animation */
+.webdevimg {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Automatically adjusts the height to maintain the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container */
+  object-position: center; /* Centers the image */
+  transition: transform 0.5s ease-in-out; /* Smooth scaling effect on hover */
+  margin-top: 120px;
+}
+ 
+.webdevimg:hover {
+  transform: scale(1.05);  /* Slightly zooms in on hover */
+}
+
+/* Background Color Animation */
+.webdev-backgroundcolor {
+  background-color: black;
+  padding: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff; /* Ensure text is visible */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Gradient Text Animation */
+.webdevcompany h1 {
+  background: linear-gradient(to right, #8201e2, #d53f8c); /* Gradient colors */
+  font-size: 2.5rem; /* Responsive font size */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+  background-clip: text; /* Standard background clip for gradient text */
+  color: transparent; /* Make sure the default text color is transparent */
+  animation: textGlow 3s infinite alternate; /* Glowing effect */
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 5px #8201e2, 0 0 10px #8201e2, 0 0 15px #d53f8c, 0 0 20px #d53f8c;
+  }
+  to {
+    text-shadow: 0 0 10px #8201e2, 0 0 20px #8201e2, 0 0 30px #d53f8c, 0 0 40px #d53f8c;
+  }
+}
+
+/* Section Animations */
+.experiencewebdesign, .strive, .bizzfly1 {
+  font-size: 1rem; /* Responsive font size */
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  
+  
+}
+
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Web Design Container Animation */
+.container-Responsivewebdesign {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Adjusts space between items */
+  gap: 20px; /* Space between items */
+  padding: 20px; /* Optional padding around the container */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+.responsive-image {
+  flex: 1; /* Takes up available space */
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.5s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.responsive-image:hover {
+  transform: scale(1.05); /* Slightly zooms in on hover */
+}
+
+.responsivewebd {
+  flex: 2; /* Takes up twice the space of the image */
+  max-width: 100%;
+}
+
+/* Heading Animations */
+h1-webd {
+  margin: 0 0 10px; /* Optional spacing between text elements */
+  font-size: 2.5rem; /* Responsive font size */
+  padding: 10px;
+  color: #5e0a9e;
+ 
+  animation: textPop 1s ease-in-out; /* Text pop effect */
+}
+
+@keyframes textPop {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+h6-encompasses {
+  color: white;
+  font-size: 1rem; /* Responsive font size */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+.Arrctech1{
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+}
+
+
+
+
+.offer-container {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.WhatWeOffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;  
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.offer-section {
+  flex: 1;
+  min-width: 300px;
+  background-color: #030000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the ul and h1 horizontally */
+}
+
+.offer-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.offer-section ul {
+  list-style-type: disc;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.offer-section ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .WhatWeOffer {
+    flex-direction: column;
+  }
+
+  .offer-section {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer-section h1 {
+    font-size: 1.25rem;
+  }
+
+  .offer-section ul li {
+    font-size: 0.9rem;
+  }
+}

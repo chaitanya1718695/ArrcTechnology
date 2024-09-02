@@ -1,0 +1,171 @@
+.appdev {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Gradient background */
+  position: relative; 
+   margin-top: 120px;
+}
+
+.appdev-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); /* Darken the image for better text contrast */
+  transition: transform 1s ease-in-out; /* Smooth 3D transition */
+
+}
+
+.appdev:hover .appdev-img {
+  transform: scale(1.05) rotateY(15deg); /* 3D zoom and slight rotation */
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 767px) {
+  .appdev {
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .appdev-img {
+    height: auto; /* Adjust image height to fit content */
+    max-height: 100vh; /* Prevent image from growing taller than the viewport */
+  }
+}
+
+
+.appdev-backcolor {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.appdev-heading {
+  color: #8A2BE2; /* Dark violet color for the text */
+  text-align: center;
+  padding: 20px;
+  animation: fadeInUp 2s ease-in-out; /* Fade-in animation */
+}
+
+.appdev-main-heading {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #4b096f, #cf3399); /* Gradient text */
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-text 3s infinite;
+}
+
+.appdev-heading h6 {
+  font-size: 1rem;
+  color: #fbfafc; /* Light grey for better readability */
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.appdev-heading p {
+  font-size: 1.2rem;
+  color: #6e06a7;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .appdev-main-heading {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .appdev-heading h6 {
+    font-size: 0.9rem;
+  }
+
+  .appdev-heading p {
+    font-size: 1rem;
+  }
+}
+
+.appdev-heading-2, .appdev-heading-3, .appdev-heading-4 {
+  margin: 30px;
+}
+
+.appdev-heading-2 h2,
+.appdev-heading-3 h2,
+.appdev-heading-4 h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #8201e2, #d53f8c); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.appdev-heading-2 p, .appdev-heading-3 p, .appdev-heading-4 p {
+  color: #a49b9b;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.appdev-heading-2 ul, .appdev-heading-3 ul, .appdev-heading-4 ul {
+  list-style-type: disc;
+  margin-left: 20px; 
+  font-size: 1rem;
+}
+
+.appdev-heading-2 li, .appdev-heading-3 li, .appdev-heading-4 li {
+  margin-bottom: 8px;
+  color: #e7e2ec;
+}
+
+
+
+
+
+.appdev-headings-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between the two sections */
+}
+
+.appdev-heading-2,
+.appdev-heading-3 {
+  flex: 1;
+  min-width: 300px; /* Ensure they stay responsive */
+}
+
+@media only screen and (max-width: 768px) {
+  .appdev-headings-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

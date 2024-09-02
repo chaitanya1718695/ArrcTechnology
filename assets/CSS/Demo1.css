@@ -1,0 +1,152 @@
+/* @keyframes gradientAnimation {
+    100% {
+        background-color: rgb(50, 4, 53);
+    }
+}
+
+.backcolor {
+    background-color: rgb(57, 20, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+.heading01 {
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+}
+
+.navigetting{
+  color: white;
+  font-weight: 700;
+}
+
+.aboutus {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    padding: 30px;
+}
+
+.IMG {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h4, h1, h5 {
+    margin-bottom: 20px;
+}
+
+.headingstext {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.intelligence {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    font-size: 50px;
+    margin: 20px;
+    position: relative;
+    animation: glow 1.5s infinite alternate, float 3s infinite ease-in-out;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.knowmore {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    animation: glow 1.5s infinite alternate, float 3s infinite ease-in-out;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.knowmore::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.knowmore:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.knowmore:hover {
+    background-color: darkviolet;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.h6text {
+    color: gray;
+}
+
+.firstheading {
+    color: rgb(186, 134, 208);
+    margin: auto;
+    margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+    .heading01 {
+        transform: none;
+        text-align: center;
+    }
+
+    .aboutus {
+        font-size: 35px;
+    }
+
+    .intelligence {
+        font-size: 30px;
+    }
+} */

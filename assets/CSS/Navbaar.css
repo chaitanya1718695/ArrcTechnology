@@ -1,0 +1,145 @@
+/* Navbar styling */
+.navbar {
+  background-color: #000; /* Background color of the navbar */
+  border-bottom: 1px solid #000; /* Border at the bottom of the navbar */
+  height: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  position:fixed ;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Logo image styling */  
+.logoimg {
+  width: 140px; 
+  height: 140px; 
+  margin-top: 13px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth scaling and fade effect */
+}
+ 
+.logoimg:hover {
+  transform: scale(1.1); /* Slightly zoom in the logo on hover */
+  opacity: 0.8; /* Slight fade effect on hover */
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  color: rgb(187, 190, 201); /* Text color */
+  font-weight: 500; /* Slightly bolder text */
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color, transform, and shadow */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change text color on hover */
+  transform: translateY(-2px); /* Slightly lift the text on hover */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* More pronounced text shadow on hover */
+}
+
+/* Navbar collapse transition */
+.collapse {
+  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition for collapse height and opacity */
+} 
+
+/* Base styles for dropdown menu */
+.dropdown-menu {
+  background-color: #bbb1c3;
+  border: 2.5px solid #84169f; /* Optional: Add a border for better definition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Remove default margin */
+  padding: 10px 0;
+  position: absolute; /* Ensure dropdown is positioned properly */
+  top: 60px; /* Align it below the navbar */
+  left: 0; /* Align it to the left of the toggle */
+  right: 0; /* Ensure it spans the full width */
+  display: none; /* Hidden by default */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in and slide-down */
+  transform: translateY(-20px); /* Slide down effect */
+  z-index: 999; /* Ensure dropdown is on top */
+  margin-top: -20px;
+}
+
+/* Show the dropdown menu */
+.nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Slide up into view */
+}
+
+/* Keyframes for cascading animation */
+@keyframes cascadeDrop {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Animation for dropdown items */
+.dropdown-item {
+  color: #6805a4;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  animation: cascadeDrop 0.3s ease forwards;
+  opacity: 0; /* Hidden initially */
+  transform: translateY(-20px); /* Start position for animation */
+}
+
+/* Delay for each dropdown item */
+.dropdown-item:nth-child(1) { animation-delay: 0.1s; }
+.dropdown-item:nth-child(2) { animation-delay: 0.2s; }
+.dropdown-item:nth-child(3) { animation-delay: 0.3s; }
+.dropdown-item:nth-child(4) { animation-delay: 0.4s; }
+.dropdown-item:nth-child(5) { animation-delay: 0.5s; }
+.dropdown-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #3608a1;
+  color: #f6f2f2;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto; /* Adjust navbar height on mobile */
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .dropdown-menu {
+    top: 60px; /* Adjust dropdown position on mobile */
+    width: 100%; /* Ensure dropdown spans full width */
+  }
+
+  .dropdown-item {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+}
+
+/* Hamburger menu */
+.hamburger {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Soft Solutions Link */
+.softsolu {
+  color: #fff;
+}
+
+/* Center-align navbar items */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Ensure navbar items take full width */
+}
+

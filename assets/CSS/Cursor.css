@@ -1,0 +1,9 @@
+body {
+    cursor: url('/public/custom-cursor.png'), auto;
+  }
+  
+body {
+    cursor: url('/custom-cursor.png'), auto;
+  }
+  
+  

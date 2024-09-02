@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Set the global font family */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  /* Main Container */
+  .bigSeoSem-container {
+    position: relative;
+    width: 100%; /* Make the width responsive */ 
+    height: 50vh; /* Use viewport height for responsiveness */
+    background-image: url("../Seoman.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Background Container */
+  .seobackground {
+    background-color: black;
+    padding: 20px;
+    margin-top: 120px;
+  }
+  
+  /* SEO Heading */
+  .SeoHeading {
+    background: linear-gradient(to right, #8201e2, #d53f8c); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    background-clip: text; /* Standard background clip for gradient text */
+    color: transparent; /* Make sure the default text color is transparent */
+
+    font-weight: 500;
+    margin: 30px;
+    padding: 20px;
+    text-align: center; /* Ensure text is centered */
+    /* animation: glowing 2.5s infinite alternate; */
+  }
+  
+  
+  /* SEO Text */
+  .Seotext p {
+    color: rgb(250, 247, 247);
+    text-align: center; /* Center align the text */
+  }
+  
+  /* SEO Content Container */
+  .SeoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* SEO Text Section */
+  .SeoText {
+    flex: 1;
+    max-width: 55%;
+    margin-right: 5%;
+  }
+  
+  /* SEO Image Section */
+  .SeoImage {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .SeoImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* SEO Text - Why Companies */
+  .WhyCompanies {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #6d4491;
+    margin-top: 30px;
+    background: linear-gradient(to right, #8201e2, #d53f8c); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    background-clip: text; /* Standard background clip for gradient text */
+    color: transparent; /* Make sure the default text color is transparent */
+
+  }
+  
+  /* SEO Text - Additional Info */
+  .CompaniesThat {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #b7b2b2;
+  }
+  
+  /* SEO Benefits List */
+  .SeoBenefits {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #afabab;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .SeoText {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .SeoImage {
+      max-width: 100%;
+      justify-content: center;
+    }
+  
+    .SeoImage img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .WhyCompanies {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+  
+    .CompaniesThat,
+    .SeoBenefits {
+      font-size: 1rem; /* Adjust font size for readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .WhyCompanies {
+      font-size: 1.8rem; /* Further reduce font size for very small screens */
+    }
+  
+    .CompaniesThat,
+    .SeoBenefits {
+      font-size: 0.9rem; /* Adjust for mobile readability */
+    }
+  
+    .SeoImage img {
+      width: 100%; /* Ensure the image is fully responsive on small screens */
+    }
+  }
+  
+
+
+ /* new div */
+.marketingsem {
+    color: #6d4491; 
+    font-weight: 600;
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to right, #8201e2, #d53f8c); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    background-clip: text; /* Standard background clip for gradient text */
+    color: transparent; /* Make sure the default text color is transparent */
+}
+  

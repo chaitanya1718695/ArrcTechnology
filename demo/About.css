@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.imagec {
+    background-image: url('../assets/cartoonrobot.jpg'), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    height: 561px; 
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    align-items: flex-end; /* Aligns content to the right */
+    text-align: right;
+    font-family: "montserrat",sans-serif  ;
+    margin-top: 120px;
+} 
+  
+
+
+
+.about-blackcolor{
+    background-color: black;
+}
+
+
+
+
+.Heading-about {
+    color: #6a0dad;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0;
+    margin-right: 13%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-shadow: 2px 2px 4px rgba(34, 14, 90, 0.7); /* Adds a shadow to the text */
+ 
+    letter-spacing: 1.5px; /* Increases the spacing between letters */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); */
+     /* Adds a subtle gradient background */
+     font-family: "montserrat",sans-serif  ;
+    display: inline-block; /* Ensures padding and margin work as expected */
+}
+
+
+.AboutText {
+    color: white;
+    font-size: px;
+    line-height: 1.5;
+    padding: 10px 20px;
+    max-width: 600px;
+    margin: 0;
+    font-family: "montserrat",sans-serif  ;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.heading1 {
+    color: #6a0dad;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-left: 35%;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); */
+    display: inline-block;
+     /* Start with the heading hidden */
+    animation: fadeInDown 2s ease-in-out forwards; /* Apply fade-in and slide-down animation */
+}
+
+.text2 {
+    color: rgb(248, 242, 242);
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 20px;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 27%;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0; /* Start with the text hidden */
+    animation: fadeInUp 2.5s ease-in-out forwards 1s; /* Apply fade-in and slide-up animation with a delay */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,143 @@
+.fontstyle1 {
+  font-weight: 390;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 70px;
+  color: rgb(226, 172, 36);
+}
+
+h1-itsolution{
+  font-weight: 600;  
+  font-family: 'Times New Roman', Times, serif; 
+  margin-left: 70px;
+  color: rgb(226, 172, 36);
+  font-size: 35px;
+}
+
+h1-compony{
+  
+  font-weight: 600;  
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  color: rgb(226, 172, 36);
+  font-size: 35px;
+} 
+
+.fontstyle4 {
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 70px;
+  color: #fff;
+}
+
+.fontstyle5 {
+  font-weight: 330;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 70px;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  color: #07090b;
+  font-weight: 400;
+  background-color: rgb(226, 172, 36);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+
+.home-container {
+  background-image: url('robot2.jpg');
+  background-size: cover;
+  width: 100%; 
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+.home-backcolor1 {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+
+.container-home1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+.image-container-home1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container-home1 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.text-container-home1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.text-container-home1 h1 {
+  font-size: 3em; /* Adjust as needed */
+  margin-bottom: 20px;
+  color:darkviolet;
+  font-weight: 500;
+}
+
+.text-container-home1 p {
+  font-size: 1.5em; /* Adjust as needed */
+  color: white;
+} 
+
+.text-container-home1 h6{
+  color: #383839;
+} 

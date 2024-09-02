@@ -1,0 +1,103 @@
+/* Container for the software solution section */
+.software-solution-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+  }
+  
+  /* Styling for the image */
+  .softsoluimg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    animation: slideInFromBottom 1.5s ease-out; /* Slide-in effect */
+  }
+  
+  /* Slide-in from bottom animation */
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+ 
+  
+  
+
+
+
+
+  /*      */
+
+
+  .software-black{
+    background-color: black;
+    padding: 10px;
+    
+
+    h1-built{
+        color: white;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        margin: 20px;
+        animation: textSlideIn 2s ease-out, fadeInUp 2s ease-in-out forwards;
+        
+    }
+
+
+    p {
+        font-size: 2.5rem;
+        margin-top: -9px;
+        background: linear-gradient(to right, #3f046b, #e78fbc); /* Gradient colors */
+        -webkit-background-clip: text; /* Clip the background to the text */
+        -webkit-text-fill-color: transparent; /* Make text color transparent to show the gradient */
+        background-clip: text; /* For non-webkit browsers */
+        color: transparent; /* Ensure text is transparent */
+        animation: textSlideIn 2s ease-out, fadeInUp 2s ease-in-out forwards;
+    }
+  }
+
+
+
+
+  /* Keyframes for slide-in and fade-in animation */
+@keyframes textSlideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/*    new div */
+  
